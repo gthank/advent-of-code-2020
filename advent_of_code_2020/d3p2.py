@@ -1,4 +1,4 @@
-"""Solver for Day 3, Problem 1 of Advent of Code 2020."""
+"""Solver for Day 3, Problem 2 of Advent of Code 2020."""
 from functools import reduce
 from operator import mul
 
