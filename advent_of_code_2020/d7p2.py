@@ -2,10 +2,6 @@
 # import pprint
 import re
 
-from collections import deque
-from functools import reduce
-from operator import mul
-
 
 EXTRACTOR = re.compile(r" ?(?P<count>\d+) (?P<bag_type>\w+ \w+) bags?")
 
