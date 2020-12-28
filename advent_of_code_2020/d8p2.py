@@ -57,12 +57,12 @@ def execute(
     print(f"{instruction_number}: {opcode} {arg}")
 
     # Drat! Infinite loop detected.
-    if instruction_number in instruction_cache:
+    if f"{instruction_number}-{allow_swap}" in instruction_cache:
         print("I have some memory of this place.")
         return None
 
     # Guard against future infinite loop.
-    instruction_cache.add(instruction_number)
+    instruction_cache.add(f"{instruction_number}-{allow_swap}")
 
     if opcode == "acc":
         accumulator += arg
